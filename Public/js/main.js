@@ -77,3 +77,15 @@ $(document).ready(function() {
 
 
 });
+
+$(window).on('resize', function() {
+  mainWindowInCenter();
+});
+
+function mainWindowInCenter() {
+  $('.location').css({
+    position: 'relative',
+    left: $(window).width() / 2 - $('.mainWindow').width() / 2,
+    top: $(window).height() / 2 - $('.mainWindow').height() / 2
+  });
+}
