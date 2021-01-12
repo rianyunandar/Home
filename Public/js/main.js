@@ -89,3 +89,4 @@ function mainWindowInCenter() {
     top: $(window).height() / 2 - $('.mainWindow').height() / 2
   });
 }
+
